@@ -9,7 +9,7 @@
  */
 
 void swap_int(int *a, int *b)
-i{
+{
 
 	int n = *a;
 	*a = *b;
