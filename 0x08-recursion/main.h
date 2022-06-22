@@ -1,4 +1,4 @@
-#ifndef MAIN_h
+#ifndef MAIN_H
 #define MAIN_H
 
 int _putchar(char c);
@@ -13,4 +13,4 @@ int get_length (char *s);
 int palind (char *s, int i);
 int wildcmp(char *s1, char *s2);
 
-#endif /*MAIN
+#endif /*MAIN */
