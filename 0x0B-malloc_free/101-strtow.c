@@ -14,13 +14,13 @@ int wordCounterRec(char *str, int i)
 		return (1 + wordCounterRec(str, i + 1));
 	return (wordCounterRec(str, i + 1));
 }
-long word_counter(char *str)
+char word_counter(char *str)
 {
 	if (str[0] != ' ')
 		return (1 + wordCounterRec(str, 0));
 	return (wordCounterRec(str, 0));
 }
-long **strtow(char *str)
+char **strtow(char *str)
 {
 	char **strDup;
 	int i, n, m, words;
