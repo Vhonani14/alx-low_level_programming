@@ -34,7 +34,6 @@ char **strtow(char *str)
 {
 	char **strDup;
 	int i, n, m, words;
-	
 	if (str == NULL || str[0] == 0)
 		return (NULL);
 	words = word_counter(str);
