@@ -17,8 +17,8 @@ int wordCounterRec(char *str, int i)
 int word_counter(char *str)
 {
 	if (str[0] != ' ')
-		return (1 + wordCounterRec(str, 0));
-	return (wordCounterRec(str, 0));
+		return (1 + word_counter(str, 0));
+	return (word_counter(str, 0));
 }
 char **strtow(char *str)
 {
