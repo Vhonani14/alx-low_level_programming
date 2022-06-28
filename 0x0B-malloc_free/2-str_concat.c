@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *str_concat - concatenates two strings
+ * str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
  * Return: pointer to new space in memory or null
@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 	i = j = 0;
-	while (s1[j] != '\0')
+	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
 		j++;
@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	i = j = 0;
 	while (s1[i] != '\0')
 	{
-		strDup[1] = s1[i];
+		strDup[i] = s1[i];
 		i++;
 	}
 	while (s2[j] != '\0')
