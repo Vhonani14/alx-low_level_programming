@@ -33,7 +33,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			strDup[k++] = av[i][j]
+			strDup[k++] = av[i][j];
 		}
 		strDup[k++] = '\n';
 																			}
