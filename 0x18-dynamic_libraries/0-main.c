@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-	printf("%d\n", _strlen("Holberton"));
+	printf("%d\n", _strlen("Main.h"));
 	return (EXIT_SUCCESS);
 }
