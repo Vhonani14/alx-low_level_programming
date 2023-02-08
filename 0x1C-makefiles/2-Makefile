@@ -1,12 +1,13 @@
-# Make school executable with variables: CC, SRC, OBJ, NAME
+NAME = school
+CC = gcc
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
 
- CC = gcc
- SRC = main.c school.c
- OBJ = $(SRC:.c=.o)
- NAME = school
+all: $(NAME)
 
- all: $(OBJ)
- 	$(CC) $? -o $(NAME)
+$(NAME): $(OBJ)
+    $(CC) $^ -o $@
 
- 	%.o: %.c
- 		$(CC) -c -o $@ $<
+%.o: %.c
+    $(CC) -c $< -o $@
+
